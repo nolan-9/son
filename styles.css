@@ -1,0 +1,245 @@
+*{
+    background-image: url(images/header.jpg);
+    background-repeat: repeat;
+    background-size: 200px;
+    color: black;
+    margin: 0;
+}
+
+h1, h2{
+    text-align: center;
+    padding: 1rem;
+}
+
+h1{
+    font-size: 40px;
+    color: azure;
+    text-shadow: 1px 1px 2px blueviolet, 0 0 1em plum, 0 0 0.2em plum;
+}
+h2 {
+    font-size: 30px;
+    color: azure;
+    text-shadow: 1px 1px 2px blueviolet, 0 0 1em plum, 0 0 0.2em plum;
+}
+
+header{
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+section{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box{
+    width: 663px;
+    height: 330px;
+    position: absolute;
+    opacity: 70%;
+    z-index: 2;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+h3 {
+    position: absolute;
+    font-size: 50px;
+    margin-top: 180px;
+    background-color: black;
+    z-index: 2;
+    opacity: 30%;
+}
+
+.Box:hover {
+    opacity: 100%;
+}
+h3:hover {
+    color: rgb(39, 6, 70);
+    opacity: 100%;
+    cursor: pointer;
+}
+.BoxTwo {
+    z-index: 1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 663px;
+    height: 330px;
+    z-index: 1;
+}
+
+.letras {
+    width: 772px;
+    height: 1000px;
+}
+
+.Letter {
+    background-color: darkorange;
+    display: block;
+    position: absolute;
+    width: 772px;
+    height: 1000px;
+    z-index: 3;
+    margin: auto;
+    transform: translateX(-40000px);
+    transition: transform .5s ease-in-out;
+}
+
+.Letter.show {
+    transform: translateX(0px);
+}
+
+.menu-btn i{
+    z-index: 4;
+    position: absolute;
+    background: transparent;
+    font-size: 50px;
+    margin-left: 720px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    .Box{
+        
+        width: 333px;
+        height: 150px;
+        position: absolute;
+        opacity: 70%;
+        z-index: 2;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    img {
+        width: 333px;
+        height: 150px;
+        z-index: 1;
+    }
+    h3 {
+        position: absolute;
+        font-size: 25px;
+        margin-top: 90px;
+        background-color: transparent;
+        z-index: 2;
+        opacity: 30%;
+    }
+    .letras {
+        width: 386px;
+        height: 500px;
+    }
+    .Letter {
+        background-color: darkorange;
+        display: block;
+        position: absolute;
+        width: 386px;
+        height: 500px;
+        z-index: 3;
+        margin: auto;
+        transform: translateX(-40000px);
+        transition: transform .5s ease-in-out;
+    }
+    .menu-btn i{
+        z-index: 4;
+        position: absolute;
+        background: transparent;
+        font-size: 30px;
+        margin-left: 355px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 450px){
+    h1{
+        font-size: 30px;
+        color: azure;
+        text-shadow: 1px 1px 2px blueviolet, 0 0 1em plum, 0 0 0.2em plum;
+    }
+    h2 {
+        font-size: 20px;
+        color: azure;
+        text-shadow: 1px 1px 2px blueviolet, 0 0 1em plum, 0 0 0.2em plum;
+    }
+    .Box{
+        
+        width: 166px;
+        height: 75px;
+        position: absolute;
+        opacity: 70%;
+        z-index: 2;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    img {
+        width: 166px;
+        height: 75px;
+        z-index: 1;
+    }
+    h3 {
+        position: absolute;
+        font-size: 18px;
+        margin-top: 45px;
+        background-color: transparent;
+        z-index: 2;
+        opacity: 30%;
+    }
+    .letras {
+        width: 257px;
+        height: 333px;
+    }
+    .Letter {
+        background-color: darkorange;
+        display: block;
+        position: absolute;
+        width: 257px;
+        height: 333px;
+        z-index: 3;
+        margin: auto;
+        transform: translateX(-40000px);
+        transition: transform .5s ease-in-out;
+    }
+    .menu-btn i{
+        z-index: 4;
+        position: absolute;
+        background: transparent;
+        font-size: 25px;
+        margin-left: 220px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 350px) {
+    .Letter {
+        background-color: darkorange;
+        display: block;
+        position: absolute;
+        width: 257px;
+        height: 333px;
+        z-index: 3;
+        margin: auto;
+        transform: translateX(-40000px);
+        transition: transform .5s ease-in-out;
+    }
+}
+
+@media (max-width: 300px) {
+    h1{
+        font-size: 25px;
+        color: azure;
+        text-shadow: 1px 1px 2px blueviolet, 0 0 1em plum, 0 0 0.2em plum;
+    }
+    h2 {
+        font-size: 15px;
+        color: azure;
+        text-shadow: 1px 1px 2px blueviolet, 0 0 1em plum, 0 0 0.2em plum;
+    }
+}
+
